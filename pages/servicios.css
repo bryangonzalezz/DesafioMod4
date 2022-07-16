@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+.servicios {
+  padding: 20px;
+}
+.servicios__titulo {
+  font-size: 32px;
+  font-family: Montserrat;
+  font-weight: 700;
+  text-align: center;
+  margin: 50px 20px;
+}
+.servicios__cards {
+  min-width: 317px;
+}
+.servicios__cards-img {
+  width: 150px;
+  height: 150px;
+  margin-left: 75px;
+}
+
+.servicios__cards-titulo {
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 700;
+  margin: 10px 0px;
+}
+.servicios__cards-parrafo {
+  text-align: center;
+  font-size: 16px;
+  font-family: Poppins;
+  font-weight: 400;
+  min-width: 317px;
+  min-height: 230px;
+  padding: 10px;
+}
