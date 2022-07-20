@@ -10,7 +10,9 @@
   color: white;
 }
 .contacto__content {
-  padding: 70px 20px;
+  padding: 50px 20px;
+  display: grid;
+  gap: 30px;
 }
 .contacto__content-titulo {
   font-size: 32px;
@@ -27,11 +29,11 @@
 .nombre,
 .email {
   width: 320px;
-  height: 35px;
+  height: 40px;
 }
 .texto {
   width: 320px;
-  height: 100px;
+  height: 140px;
 }
 .submit {
   font-family: Poppins;
@@ -40,7 +42,7 @@
   border: none;
   background-color: #2c2c2c;
   color: white;
-  margin-top: 80px;
   height: 40px;
   width: 320px;
+  margin-top: 20px;
 }

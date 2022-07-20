@@ -54,5 +54,5 @@ function componenteHeader(el) {
     burger.style.display = "";
   });
 
-  // el.appendChild(comHedaer);
+  // el.appendChild(comHedaer); 
 }
