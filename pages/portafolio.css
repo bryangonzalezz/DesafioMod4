@@ -46,8 +46,10 @@ body {
 @media screen and (min-width: 500px) {
   .portafolio-page__cards {
     background-color: #77777738;
-    margin-right: 40px;
+    margin-right: 60px;
     border-radius: 20px;
+    margin-top: 50px;
+
   }
 }
 

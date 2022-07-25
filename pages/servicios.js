@@ -22,7 +22,6 @@ function contenfulServiciosPag() {
     })
     .then((data) => {
       const contenidoData = data.items.map((grupoDataServ) => {
-        console.log(grupoDataServ);
         const imagenfinal = imagenp(grupoDataServ.fields.imagen.sys.id, data);
         return {
           titulo: grupoDataServ.fields.titulo,
