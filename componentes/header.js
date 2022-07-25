@@ -27,9 +27,9 @@ function componenteHeader() {
     </div>
     <div class="menu-burger__tex">
       <div class="menu-burger__tex-content">
-      <a href="./Portafolio.html">Portafolio</a>
-      <a href="./Servicios.html">Servicios</a>
-      <a href="./Contacto.html">Contacto</a>
+      <a href="./portafolio.html">Portafolio</a>
+      <a href="./servicios.html">Servicios</a>
+      <a href="./contacto.html">Contacto</a>
       </div>
     </div>
   </div>
@@ -54,7 +54,7 @@ function componenteHeader() {
     burger.style.display = "";
   });
 
-  // el.appendChild(comHedaer); 
+  // el.appendChild(comHedaer);
 }
 
 componenteHeader();
