@@ -14,11 +14,10 @@ body {
   width: 100%;
   align-items: center;
   padding: 8px;
-  
 }
 @media (min-width: 500px) {
   .header {
-    padding: 8px;
+    padding: 30px 30px;
   }
 }
 .header__icon-logo {
@@ -96,6 +95,14 @@ body {
   color: white;
   margin-right: 40px;
   font-size: 20px;
+}
+@media (min-width: 800px) {
+  .header__nav {
+    font-size: 20px;
+    gap: 80px;
+
+    margin: 0px;
+  }
 }
 
 a {
