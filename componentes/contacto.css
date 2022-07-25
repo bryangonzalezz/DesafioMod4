@@ -28,6 +28,10 @@ body {
     margin-left: 300px;
   }
 }
+.contacto__div {
+  width: 320px;
+  height: 40px;
+}
 
 .contacto__content-titulo {
   font-size: 32px;
@@ -47,21 +51,17 @@ body {
   display: grid;
   gap: 40px;
 }
-label {
-  margin-left: 10px;
-}
+
 .nombre,
 .email {
-  width: 300px;
+  width: 320px;
   height: 40px;
   margin-bottom: 30px;
-  margin-left: 10px;
 }
 .texto {
-  width: 300px;
+  width: 320px;
   height: 140px;
   margin-bottom: 30px;
-  margin-left: 10px;
 }
 .submit {
   font-family: Poppins;
