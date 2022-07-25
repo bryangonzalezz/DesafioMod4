@@ -35,9 +35,9 @@ function componenteHeader() {
   </div>
 </div>
 <div class="header__nav">
-<a href="./Portafolio.html">Portafolio</a>
-<a href="./Servicios.html">Servicios</a>
-<a href="./Contacto.html">Contacto</a>
+<a href="./portafolio.html">Portafolio</a>
+<a href="./servicios.html">Servicios</a>
+<a href="./sontacto.html">Contacto</a>
   </div>
 </div>`;
 
