@@ -1,4 +1,4 @@
-function componenteHeader(el) {
+function componenteHeader() {
   const comHedaer = document.querySelector(".header");
   comHedaer.innerHTML = `<nav class="header__icon">
   <a href="./index.html " class="icon-a">
@@ -56,3 +56,5 @@ function componenteHeader(el) {
 
   // el.appendChild(comHedaer); 
 }
+
+componenteHeader();

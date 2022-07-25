@@ -1,1 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./pages/portafolio.css" />
+    <link rel="stylesheet" href="./componentes/header.css" />
+    <link rel="stylesheet" href="./pages/portafolio.css" />
+    <link rel="stylesheet" href="./componentes/footer.css" />
+    <!-- SCRIPT -->
+    <script defer src="./pages/portafolio.js"></script>
+    <script defer src="./componentes/header.js"></script>
+    <script defer src="./componentes/footer.js"></script>
+    <script defer src="./index.js"></script>
+    <title>Portafolio</title>
+  </head>
 
+  <body>
+    <header class="header"></header>
+
+    <section class="portafolio-page">
+      <h2 class="portafolio-titulo">Portafolio</h2>
+      <div class="portafolio-cards__container"></div>
+    </section>
+
+    <template id="portafolio-page__cards">
+      <div class="portafolio-page__cards">
+        <img src="" alt="" class="portafolio-cards__img" />
+        <h2 class="portafolio-cards__titulo">servicios</h2>
+        <p class="portafolio-cards__parrafo"></p>
+        <div class="portafolio-link">
+          <a class="portafolio-link__content" href="">ver mas...</a>
+        </div>
+      </div>
+    </template>
+
+    <footer class="footer">
+      <div class="footer-content"></div>
+    </footer>
+  </body>
+</html>

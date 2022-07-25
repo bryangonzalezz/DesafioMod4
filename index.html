@@ -18,19 +18,16 @@
     />
 
     <!-- CSS -->
+    <link rel="stylesheet" href="./pages/index.css" />
     <link rel="stylesheet" href="./componentes/header.css" />
     <link rel="stylesheet" href="./componentes/contacto.css" />
-    <link rel="stylesheet" href="./pages/index.css" />
-    <link rel="stylesheet" href="./pages/servicios.css" />
+    <link rel="stylesheet" href="./componentes/footer.css" />
     <!-- SCRIPT -->
     <script defer src="./componentes/header.js"></script>
     <script defer src="./componentes/contacto.js"></script>
-    <script defer src="./pages/bienvenidos.js"></script>
-    <script defer src="./pages/presentacion.js"></script>
-    <script defer src="./pages/servicios.js"></script>
+    <script defer src="./componentes/footer.js"></script>
     <script defer src="./pages/index.js"></script>
-
-    <title>Desafio Modulo 4</title>
+    <title>Home</title>
   </head>
 
   <body>
@@ -44,16 +41,11 @@
     </section>
     <section class="presentacion">
       <div class="presentacion__content">
-        <h2 class="presentacion__content-titulo">El Titulo</h2>
-        <p class="presentacion__content-parrafo">
-          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
-          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
-          Integer ut iaculis augue, sit amet tincidunt ex. In eleifend justo et
-          sodales semper. Mauris nec tortor lectus. Curabitur nec ultricies
-          dolor.
-        </p>
+        <img class="presentacion__content-imagen" src="" alt="" />
+        <div class="presentacion-div">
+          <h2 class="presentacion__content-titulo">El Titulo</h2>
+          <p class="presentacion__content-parrafo"></p>
+        </div>
       </div>
     </section>
 
@@ -66,16 +58,16 @@
       <div class="servicios__cards">
         <img src="./imagenes/Web-img.png" alt="" class="servicios__cards-img" />
         <h2 class="servicios__cards-titulo">servicios</h2>
-        <p class="servicios__cards-parrafo">
-          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
-          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
-          vehicula velit. Aenean lobortis posuere tristique.
-        </p>
+        <p class="servicios__cards-parrafo"></p>
       </div>
     </template>
 
     <section class="contacto">
       <form class="contacto__content"></form>
     </section>
+
+    <footer class="footer">
+      <div class="footer-content"></div>
+    </footer>
   </body>
 </html>

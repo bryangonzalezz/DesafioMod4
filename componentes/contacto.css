@@ -3,17 +3,36 @@
   margin: 0%;
   padding: 0%;
 }
+body {
+  background-color: #761124;
+}
+
 .contacto {
   min-width: 360px;
   min-height: 660px;
   background-color: #761124;
   color: white;
 }
+
 .contacto__content {
   padding: 50px 20px;
   display: grid;
-  gap: 30px;
+  gap: 40px;
 }
+
+@media screen and (min-width: 800px) {
+  .contacto__content {
+    display: flex;
+    padding: 100px 20px;
+    margin-top: 50px;
+    margin-left: 300px;
+  }
+}
+.contacto__div {
+  width: 320px;
+  height: 40px;
+}
+
 .contacto__content-titulo {
   font-size: 32px;
   text-align: center;
@@ -21,19 +40,28 @@
   font-weight: 700;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 800px) {
+  .contacto__content-titulo {
+    font-weight: 700;
+    font-size: 48px;
+  }
+}
 .contacto__content-form {
   flex-direction: column;
   display: grid;
   gap: 40px;
 }
+
 .nombre,
 .email {
   width: 320px;
   height: 40px;
+  margin-bottom: 30px;
 }
 .texto {
   width: 320px;
   height: 140px;
+  margin-bottom: 30px;
 }
 .submit {
   font-family: Poppins;

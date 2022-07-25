@@ -1,39 +1,48 @@
-function agregarCards(params = {}) {
-  const templateCards = document.querySelector("#servicios__cards-template");
-  const containerCards = document.querySelector(".servicios__cards-content");
-  templateCards.content.querySelector(".servicios__cards-titulo").textContent =
+function agregarServiciosPag(params = {}) {
+  const templateCards = document.querySelector("#servicios-page__cards");
+  const containerCards = document.querySelector(".servicios-cards__container");
+
+  templateCards.content.querySelector(".servicios-cards__titulo").textContent =
     params.titulo;
-  templateCards.content.querySelector(".servicios__cards-parrafo").textContent =
+  templateCards.content.querySelector(".servicios-cards__parrafo").textContent =
     params.parrafo;
-  templateCards.content.querySelector(".servicios__cards-img").src =
-    params.image;
+
+  templateCards.content.querySelector(".servicios-cards__img").src =
+    params.imagen;
 
   const clone = document.importNode(templateCards.content, true);
   containerCards.appendChild(clone);
 }
-
-function contenfulServiciosData() {
+function contenfulServiciosPag() {
   return fetch(
-    "https://cdn.contentful.com/spaces/rnruhwfoanxz/environments/master/entries?access_token=tWrlpvumHVQjxE_yOLtyhJf9hFf9PTqFCNluZFci7G4&content_type=servicios"
+    "https://cdn.contentful.com/spaces/rnruhwfoanxz/environments/master/entries?access_token=tWrlpvumHVQjxE_yOLtyhJf9hFf9PTqFCNluZFci7G4&content_type=serviciospag"
   )
     .then((res) => {
       return res.json();
     })
     .then((data) => {
-      const fieldsCollections = data.items.map((item) => {
-        const imagen = imagenE(item.fields.webImg.sys.id, data);
+      const contenidoData = data.items.map((grupoDataServ) => {
+        console.log(grupoDataServ);
+        const imagenfinal = imagenp(grupoDataServ.fields.imagen.sys.id, data);
         return {
-          titulo: item.fields.subtitulo,
-          parrafo: item.fields.parrafo,
-          image: imagen.fields.file.url,
+          titulo: grupoDataServ.fields.titulo,
+          parrafo: grupoDataServ.fields.parrafo,
+          imagen: imagenfinal.fields.file.url,
         };
       });
-      return fieldsCollections;
+      return contenidoData;
     });
-  function imagenE(id, data) {
-    const arrayEncontrado = data.includes.Asset.find((asset) => {
-      return asset.sys.id == id;
+
+  function imagenp(id, data) {
+    const imagenEncontrada = data.includes.Asset.find((imagenn) => {
+      return imagenn.sys.id == id;
     });
-    return arrayEncontrado;
+    return imagenEncontrada;
   }
 }
+
+contenfulServiciosPag().then((dataCards) => {
+  for (const cards of dataCards) {
+    agregarServiciosPag(cards);
+  }
+});

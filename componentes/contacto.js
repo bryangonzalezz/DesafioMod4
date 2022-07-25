@@ -2,12 +2,13 @@ function componenteContacto() {
   const form = document.querySelector(".contacto__content");
   form.innerHTML = `
   <h2 class="contacto__content-titulo">Escribime</h2>
-<form class="contacto__content-form">
+  <div class="contacto__div">
+  <form class="contacto__content-form">
   <label for="nombre">
-    NOMBRE
-    <input class="nombre" name="nombre" type="text" />
+  NOMBRE
+  <input class="nombre" name="nombre" type="text" />
   </label>
-
+  
   <label for="email">
     EMAIL
     <input class="email" name="email" type="text" />
@@ -18,7 +19,9 @@ function componenteContacto() {
     <textarea name="texto" class="texto"></textarea>
   </label>
   <button type="submit" class="submit">Enviar</button>
-</form>`;
+  </form>
+  </div>
+  `;
 
   form.addEventListener("submit", function (evento) {
     evento.preventDefault();
@@ -38,8 +41,7 @@ function componenteContacto() {
       method: "POST",
       body: JSON.stringify(mensaje),
       headers: { "content-type": "application/json" },
-    })
-      .catch((error) => {
+    }).catch((error) => {
       console.log(error);
     });
 
@@ -49,3 +51,4 @@ function componenteContacto() {
     alert("EL MENSAJE SE ENVIOOO");
   });
 }
+componenteContacto();
