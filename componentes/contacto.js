@@ -1,7 +1,8 @@
 function componenteContacto() {
   const form = document.querySelector(".contacto__content");
+
   form.innerHTML = `
-  <h2 class="contacto__content-titulo">Escribime</h2>
+  <h2 id="contactoTitulo" class="contacto__content-titulo">Contacto</h2>
   <div class="contacto__div">
   <form class="contacto__content-form">
   <label for="nombre">
@@ -22,6 +23,10 @@ function componenteContacto() {
   </form>
   </div>
   `;
+
+  // document.getElementById("contactoTitulo").textContent = "Contacto";
+
+
 
   form.addEventListener("submit", function (evento) {
     evento.preventDefault();

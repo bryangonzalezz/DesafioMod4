@@ -157,3 +157,17 @@
   min-height: 230px;
   padding: 10px;
 }
+/* CONTACTO  */
+#contacto {
+  background-color: #750e21;
+  min-height: 660px;
+}
+#contactoTitulo {
+  visibility: hidden;
+}
+
+#contactoTitulo::before {
+  content: "Escribime";
+  visibility: visible;
+  position: absolute;
+}

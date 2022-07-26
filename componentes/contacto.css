@@ -3,20 +3,21 @@
   margin: 0%;
   padding: 0%;
 }
-body {
-  background-color: #761124;
-  
-}
 
 .contacto {
   min-width: 360px;
-  min-height: 660px;
-  background-color: #761124;
+  min-height: 900px;
   color: white;
+  background-color: #082852;
+}
+@media screen and (max-width: 800px) {
+  .contacto {
+    background-color: #750e21;
+  }
 }
 
 .contacto__content {
-  padding: 50px 20px;
+  padding: 50px 2px;
   display: grid;
   gap: 40px;
 }
@@ -32,6 +33,7 @@ body {
 .contacto__div {
   width: 320px;
   height: 40px;
+  margin-left: 20px;
 }
 
 .contacto__content-titulo {
