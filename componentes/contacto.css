@@ -10,7 +10,7 @@
   color: white;
   background-color: #082852;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .contacto {
     background-color: #750e21;
   }
@@ -18,37 +18,51 @@
 
 .contacto__content {
   padding: 50px 2px;
-  display: grid;
   gap: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .contacto__content {
-    display: flex;
     padding: 100px 20px;
     margin-top: 50px;
-    margin-left: 300px;
+    display: grid;
+    grid-template-columns: auto auto;
   }
 }
 .contacto__div {
   width: 320px;
   height: 40px;
-  margin-left: 20px;
+  margin-bottom: 100px;
 }
 
 .contacto__content-titulo {
+  color: #ffffff;
+  width: 300px;
   font-size: 32px;
   text-align: center;
   font-family: Montserrat;
   font-weight: 700;
   margin-bottom: 50px;
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
   .contacto__content-titulo {
     font-weight: 700;
     font-size: 48px;
+    margin-top: -35px;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .contacto__content-titulo {
+    border: solid 1px;
+    background-color: rgba(0, 0, 0, 0.841);
+  }
+}
+
 .contacto__content-form {
   flex-direction: column;
   display: grid;
