@@ -14,6 +14,8 @@ body {
   width: 100%;
   align-items: center;
   padding: 8px;
+  
+  ;
 }
 @media (min-width: 500px) {
   .header {
@@ -25,6 +27,7 @@ body {
   height: 60px;
   border-radius: 50%;
   margin: 10px;
+  margin-top: 30px;
 }
 @media (min-width: 500px) {
   .header__icon-logo {
@@ -48,6 +51,8 @@ body {
   height: 50px;
   border-radius: 50%;
   margin: 10px;
+  margin-top: 30px;
+
 }
 .menu-burger__content {
   position: absolute;
